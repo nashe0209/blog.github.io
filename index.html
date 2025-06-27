@@ -199,8 +199,6 @@
 
 </style>
 </head>
-
-
 <body>
   <!-- Barra lateral izquierda -->
   <div class="sidebar-left">
@@ -211,42 +209,42 @@
   <!-- Contenido principal -->
   <div class="main-content">
     <h1>Blog Personal</h1>
-    
+
     <!-- Barra de búsqueda -->
-    <form action="resultados_busqueda.html" method="GET" class="search-form">
+    <form action="#" method="GET" class="search-form">
         <input type="text" name="q" placeholder="Buscar publicaciones..." required>
         <button type="submit" style="font-size: 1rem;">🔍</button>
     </form>
 
-    <p>Hola, <strong>UsuarioEjemplo</strong>. Aquí puedes ver todas las publicaciones recientes.</p>
+    <p>Hola, <strong>usuario_demo</strong>. Aquí puedes ver todas las publicaciones recientes.</p>
 
     <!-- Sección de publicaciones recientes -->
     <section id="posts">
       <h2>Publicaciones Recientes</h2>
       <ul class="post-list">
         <li class="post-item">
-          <h3><a href="ver_post.html">Título de publicación 1</a></h3>
-          <p><strong>Autor:</strong> nombre_usuario1</p>
-          <p><strong>Fecha:</strong> 2024-06-27</p>
-          <p><strong>Categorías:</strong> HTML, CSS</p>
-          <p>Contenido de ejemplo de la publicación recortado...</p>
+          <h3><a href="ver_post.php?id=1">Título de la publicación 1</a></h3>
+          <p><strong>Autor:</strong> autor_demo</p>
+          <p><strong>Fecha:</strong> 2025-06-27</p>
+          <p><strong>Categorías:</strong> Tecnología, PHP</p>
+          <p>Este es un resumen del contenido de la publicación...</p>
         </li>
         <li class="post-item">
-          <h3><a href="ver_post.html">Título de publicación 2</a></h3>
-          <p><strong>Autor:</strong> nombre_usuario2</p>
-          <p><strong>Fecha:</strong> 2024-06-26</p>
-          <p><strong>Categorías:</strong> PHP</p>
-          <p>Otra descripción de contenido de la publicación...</p>
+          <h3><a href="ver_post.php?id=2">Título de la publicación 2</a></h3>
+          <p><strong>Autor:</strong> otra_persona</p>
+          <p><strong>Fecha:</strong> 2025-06-26</p>
+          <p><strong>Categorías:</strong> Programación</p>
+          <p>Otro resumen del contenido del segundo post...</p>
         </li>
       </ul>
 
-      <!-- Paginación simulada -->
+      <!-- Paginación -->
       <div class="pagination">
-        <a href="#">« Anterior</a>
+        <a href="#">&laquo; Anterior</a>
         <a href="#" class="active">1</a>
         <a href="#">2</a>
         <a href="#">3</a>
-        <a href="#">Siguiente »</a>
+        <a href="#">Siguiente &raquo;</a>
       </div>
     </section>
   </div>
@@ -256,8 +254,7 @@
     <h3>Opciones</h3>
     <a href="registro.php">Registrarse</a>
     <a href="login.php">Iniciar Sesión</a>
+    <!-- o <a href="logout.php">Cerrar Sesión</a> si ya está logueado -->
   </div>
 </body>
-
-
 </html>
